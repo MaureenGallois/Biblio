@@ -11,8 +11,10 @@
           <ion-title size="large">Page d'accueil</ion-title>
         </ion-toolbar>
       </ion-header>
-
-      <ExploreContainer name="Liste des livres" />
+      <div class="search_book">
+        <input type="text" v-model="search" placeholder="Rechercher..."/>
+            <label>Rechercher un livre:</label>
+      </div>
     </ion-content>
   </ion-page>
 </template>
@@ -23,6 +25,14 @@ import ExploreContainer from '@/components/ExploreContainer.vue';
 
 export default  {
   name: 'Accueil',
-  components: { ExploreContainer, IonHeader, IonToolbar, IonTitle, IonContent, IonPage }
+  components: { IonHeader, IonToolbar, IonTitle, IonContent, IonPage }
 }
 </script>
+<style>
+
+.search_book{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+</style>
