@@ -1,18 +1,21 @@
 <template>
+<!-- http://localhost:8100/home/livre pour acceder à cette page (pour le moment tant que home n'est pas fait) -->
   <ion-page>
     <ion-header>
       <ion-toolbar>
-        <ion-title>Tab 2</ion-title>
+        <!-- <ion-title>Livre {{'nom.livre'}}</ion-title> -->
+        <ion-title>Livre</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content :fullscreen="true">
       <ion-header collapse="condense">
         <ion-toolbar>
-          <ion-title size="large">Tab 2</ion-title>
+          <!-- <ion-title size="large">Livre {{'nom.livre'}}</ion-title> -->
+          <ion-title>Livre</ion-title>
         </ion-toolbar>
       </ion-header>
-      
-      <ExploreContainer name="Tab 2 page" />
+
+      <ExploreContainer name="book page" />
     </ion-content>
   </ion-page>
 </template>
@@ -22,7 +25,7 @@ import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue
 import ExploreContainer from '@/components/ExploreContainer.vue';
 
 export default  {
-  name: 'Tab2',
+  name: 'Livre',
   components: { ExploreContainer, IonHeader, IonToolbar, IonTitle, IonContent, IonPage }
 }
 </script>
